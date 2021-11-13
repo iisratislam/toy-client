@@ -22,11 +22,11 @@ const MakeAdmin = () => {
                 if (res.data) {
                     return swal("Successfully Added", `${data.email} has been successfully added as an admin.`, "success");
                 }
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                swal("Successfully Added", "error", { dangerMode: true });
             })
             .catch(error => {
                 toast.dismiss(loading);
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true })
+                swal("Successfully Added", "error", { dangerMode: true })
             });
     }
 
