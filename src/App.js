@@ -23,7 +23,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/isAdmin?email=${loggedInUser?.email}`)
+    axios.get(`https://hidden-beyond-66408.herokuapp.com/isAdmin?email=${loggedInUser?.email}`)
       .then(res => {
         setIsAdmin(res.data);
         setAdminLoading(false);

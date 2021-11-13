@@ -12,7 +12,7 @@ const BookingList = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/orders?email=${email}`)
+        axios.get(`https://hidden-beyond-66408.herokuapp.com/orders?email=${email}`)
             .then(res => {
                 setOrders(res.data);
                 setLoading(false);

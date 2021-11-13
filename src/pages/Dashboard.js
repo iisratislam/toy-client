@@ -37,7 +37,7 @@ const Dashboard = ({ adminLoading }) => {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/reviews?email=${email}`)
+        axios.get(`https://hidden-beyond-66408.herokuapp.com/reviews?email=${email}`)
             .then(res => {
                 setReview(res.data);
                 setLoadingReview(false);
