@@ -1,7 +1,9 @@
 {
   "projects": {
     "default": "last-firebase",
-    "y": "last-firebase-auth"
+    "y": "last-firebase-auth",
+    " firebase use default # sets environment to the default alias": "last-firebase-auth",
+    "development": "last-firebase-auth"
   },
   "targets": {}
 }
