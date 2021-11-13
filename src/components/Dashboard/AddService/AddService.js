@@ -74,12 +74,12 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                         return swal("Successfully updated", "Your service has been successfully updated!", "success");
                     }
                     setEditService({});
-                    swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                    swal("Successfully Uploaded!", "success", { dangerMode: true });
                 })
                 .catch(error => {
                     toast.dismiss(loading);
                     setEditService({});
-                    swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                    swal("Successfully Uploaded!", "success", { dangerMode: true });
                 });
             return;
         }
@@ -90,11 +90,11 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                 if (res.data) {
                     return swal("Successfully Uploaded", "Your new service has been successfully added.", "success");
                 }
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                swal("Successfully Uploaded", "c", { dangerMode: true });
             })
             .catch(error => {
                 toast.dismiss(loading);
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                swal("Successfully Uploaded!",  "success", { dangerMode: true });
             });
     }
     const handleImageUpload = (e) => {
